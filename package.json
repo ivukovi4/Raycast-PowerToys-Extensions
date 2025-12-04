@@ -1,0 +1,79 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "powertoys-extensions",
+  "title": "PowerToys Extensions",
+  "description": "Manage PowerToys utilities from raycast",
+  "icon": "extension-icon.png",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "awake-indefinite",
+      "title": "Awake – Indefinite",
+      "description": "Keep PC awake indefinitely",
+      "mode": "no-view",
+      "icon": "./awake/indefinite.png"
+    },
+    {
+      "name": "awake-30m",
+      "title": "Awake – 30 Minutes",
+      "description": "Keep PC awake for 30 minutes",
+      "mode": "no-view",
+      "icon": "awake/timed.png"
+    },
+    {
+      "name": "awake-1h",
+      "title": "Awake – 1 Hour",
+      "description": "Keep PC awake for 1 hour",
+      "mode": "no-view",
+      "icon": "awake/timed.png"
+    },
+    {
+      "name": "awake-2h",
+      "title": "Awake – 2 Hours",
+      "description": "Keep PC awake for 2 hours",
+      "mode": "no-view",
+      "icon": "awake/timed.png"
+    },
+    {
+      "name": "awake-off",
+      "title": "Awake – Off",
+      "description": "Turn Awake off (passive)",
+      "mode": "no-view",
+      "icon": "awake/disabled.png"
+    },
+    {
+      "name": "hosts-editor",
+      "title": "Open Hosts Editor",
+      "description": "Launch PowerToys Hosts File Editor",
+      "mode": "no-view",
+      "icon": "Hosts.png"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.103.0",
+    "@raycast/utils": "^2.2.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "build": "ray build",
+    "publish": "npx @raycast/api@latest publish",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1"
+  },
+  "author": "ivukovi4",
+  "platforms": [
+    "Windows"
+  ],
+  "categories": [
+    "Productivity"
+  ]
+}
