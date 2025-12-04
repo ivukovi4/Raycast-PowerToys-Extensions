@@ -2,7 +2,7 @@ import { Toast, showToast } from "@raycast/api";
 import { execFile } from "child_process";
 import fs from "fs";
 import path from "path";
-import { getAppDataLocalFolderPath } from "./utils/getAppDataLocalFolderPath";
+import { getLocalFolderPath } from "./utils/getLocalFolderPath";
 
 export default async function Command() {
     try {
@@ -11,7 +11,7 @@ export default async function Command() {
             title: "Launching PowerToys Hosts Editor..."
         });
 
-        const local = getAppDataLocalFolderPath();
+        const local = getLocalFolderPath();
 
         // New WinUI3 path (PowerToys 0.96+)
         const winui3Path = path.join(
@@ -57,7 +57,6 @@ export default async function Command() {
             style: Toast.Style.Success,
             title: "PowerToys Hosts Editor launched"
         });
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
         await showToast({
             style: Toast.Style.Failure,

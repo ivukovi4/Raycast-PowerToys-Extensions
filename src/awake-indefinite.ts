@@ -15,7 +15,6 @@ export default async function Command() {
             title: "Awake set to Indefinite",
             message: "Display will stay ON",
         });
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
         console.error(e);
 

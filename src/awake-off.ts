@@ -15,7 +15,6 @@ export default async function Command() {
             title: "Awake set to Passive",
             message: "Awake is effectively off",
         });
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
         console.error(e);
 

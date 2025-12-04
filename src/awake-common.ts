@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { formatWithOffset } from "./utils/formatWithOffset";
 import { readJsonFileSafe } from "./utils/readJsonFileSafe";
-import { getAppDataLocalFolderPath } from "./utils/getAppDataLocalFolderPath";
+import { getLocalFolderPath } from "./utils/getLocalFolderPath";
 
 export type ModeName = "Passive" | "Indefinite" | "Timed" | "Expire";
 
@@ -27,7 +27,7 @@ export function updateAwakeSettings(
     expireTime: string,
     displayOn: boolean
 ) {
-    const localAppData = getAppDataLocalFolderPath();
+    const localAppData = getLocalFolderPath();
 
     // Просто проверяем, что PowerToys вообще установлен
     const possiblePaths = [

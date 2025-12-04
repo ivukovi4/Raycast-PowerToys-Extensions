@@ -3,8 +3,6 @@ import { updateAwakeSettings } from "./awake-common";
 
 export function createAwakeTimedCommand(minutes: number) {
     return async function Command() {
-
-
         try {
             await showToast({
                 style: Toast.Style.Animated,
@@ -18,7 +16,6 @@ export function createAwakeTimedCommand(minutes: number) {
                 title: "Awake set",
                 message: `${minutes} minutes, display ON`,
             });
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (e: any) {
             console.error(e);
 
