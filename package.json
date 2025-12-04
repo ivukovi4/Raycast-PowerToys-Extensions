@@ -43,42 +43,35 @@
     },
     {
       "name": "hosts-editor",
-      "title": "Open Hosts Editor",
+      "title": "Hosts Editor",
       "description": "Launch PowerToys Hosts File Editor",
       "mode": "no-view",
       "icon": "Hosts.png"
     },
     {
-      "name": "color-picker",
-      "title": "PowerToys – Color Picker",
-      "description": "Launch PowerToys Color Picker",
-      "mode": "no-view",
-      "icon": "command-icon.png"
-    },
-    {
       "name": "screen-ruler",
-      "title": "Open Screen Ruler",
+      "title": "Screen Ruler",
       "description": "Launch PowerToys Screen Ruler",
       "mode": "no-view",
       "icon": "ScreenRuler.png"
     },
     {
       "name": "shortcut-guide",
-      "title": "Open Shortcut Guide",
+      "title": "Shortcut Guide",
       "description": "Launch PowerToys Shortcut Guide overlay",
       "mode": "no-view",
       "icon": "ShortcutGuide.png"
     },
     {
       "name": "registry-editor",
-      "title": "Open Registry Preview",
+      "title": "Registry Preview",
       "description": "Launch PowerToys Registry Preview",
       "mode": "no-view",
       "icon": "RegistryPreview.png"
     },
     {
       "name": "env-vars",
-      "title": "Open Environment Variables",
+      "title": "Environment Variables",
       "description": "Launch PowerToys Environment Variables editor",
       "mode": "no-view",
       "icon": "EnvironmentVariables.png"

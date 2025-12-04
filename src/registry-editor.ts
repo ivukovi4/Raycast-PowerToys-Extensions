@@ -1,4 +1,4 @@
-import { Toast, showToast } from "@raycast/api";
+import { Toast, closeMainWindow, showToast } from "@raycast/api";
 import { execFile } from "child_process";
 import fs from "fs";
 import path from "path";
@@ -37,10 +37,7 @@ export default async function Command() {
             }
         });
 
-        await showToast({
-            style: Toast.Style.Success,
-            title: "Registry Preview launched",
-        });
+        await closeMainWindow();
     } catch (e: any) {
         await showToast({
             style: Toast.Style.Failure,

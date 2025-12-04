@@ -1,8 +1,9 @@
-import { Toast, showToast } from "@raycast/api";
+import { Toast, showToast, closeMainWindow } from "@raycast/api";
 import { execFile } from "child_process";
 import fs from "fs";
 import path from "path";
 import { getPowerToysPath } from "./utils/getPowerToysPath";
+
 
 export default async function Command() {
     try {
@@ -37,10 +38,7 @@ export default async function Command() {
             }
         });
 
-        await showToast({
-            style: Toast.Style.Success,
-            title: "Shortcut Guide launched",
-        });
+        await closeMainWindow();
     } catch (e: any) {
         await showToast({
             style: Toast.Style.Failure,
