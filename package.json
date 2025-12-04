@@ -3,7 +3,7 @@
   "name": "powertoys-extensions",
   "title": "PowerToys Extensions",
   "description": "Manage PowerToys utilities from raycast",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "license": "MIT",
   "commands": [
     {
