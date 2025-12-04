@@ -3,11 +3,6 @@ import { updateAwakeSettings } from "./awake-common";
 
 export default async function Command() {
   try {
-    await showToast({
-      style: Toast.Style.Animated,
-      title: "Turning Awake off...",
-    });
-
     updateAwakeSettings("Passive", 0, "", false);
 
     await showToast({

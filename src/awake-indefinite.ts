@@ -8,7 +8,7 @@ export default async function Command() {
       title: "Setting Awake: Indefinite",
     });
 
-    updateAwakeSettings("Indefinite", 0, "", true); // displayOn = true (можешь сделать false)
+    updateAwakeSettings("Indefinite", 0, "", true);
 
     await showToast({
       style: Toast.Style.Success,

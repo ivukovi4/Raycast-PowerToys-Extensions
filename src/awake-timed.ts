@@ -4,11 +4,6 @@ import { updateAwakeSettings } from "./awake-common";
 export function createAwakeTimedCommand(minutes: number) {
   return async function Command() {
     try {
-      await showToast({
-        style: Toast.Style.Animated,
-        title: `Setting Awake: ${minutes} minutes`,
-      });
-
       updateAwakeSettings("Timed", minutes, "", true);
 
       await showToast({

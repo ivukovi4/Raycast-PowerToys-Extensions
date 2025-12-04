@@ -6,11 +6,6 @@ import { getLocalFolderPath } from "./utils/getLocalFolderPath";
 
 export default async function Command() {
   try {
-    await showToast({
-      style: Toast.Style.Animated,
-      title: "Launching PowerToys Hosts Editor...",
-    });
-
     const local = getLocalFolderPath();
 
     // New WinUI3 path (PowerToys 0.96+)

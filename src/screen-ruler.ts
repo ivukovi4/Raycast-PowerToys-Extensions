@@ -6,11 +6,6 @@ import { getPowerToysPath } from "./utils/getPowerToysPath";
 
 export default async function Command() {
   try {
-    await showToast({
-      style: Toast.Style.Animated,
-      title: "Launching PowerToys Screen Ruler...",
-    });
-
     const ptBase = getPowerToysPath();
 
     const candidates = [
