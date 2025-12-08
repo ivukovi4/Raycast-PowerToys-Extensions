@@ -1,14 +1,11 @@
-import { Toast, showToast } from "@raycast/api";
+import { Toast, closeMainWindow, showToast } from "@raycast/api";
 import { updateAwakeSettings } from "./awake-common";
 
 export default async function Command() {
   try {
-    await showToast({
-      style: Toast.Style.Animated,
-      title: "Setting Awake: Indefinite",
-    });
-
     updateAwakeSettings("Indefinite", 0, "", true);
+
+    await closeMainWindow();
 
     await showToast({
       style: Toast.Style.Success,
