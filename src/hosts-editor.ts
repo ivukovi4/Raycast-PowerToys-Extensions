@@ -32,7 +32,7 @@ export default async function Command() {
       );
     }
 
-    execFile(exePath, (err) => {
+    execFile("powershell.exe", ["-Command", `Start-Process '${exePath}' -Verb RunAs`], (err) => {
       if (err) {
         showToast({
           style: Toast.Style.Failure,
